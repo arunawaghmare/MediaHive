@@ -3,6 +3,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcrypt";
 import User from "@/models/User";
 import { connectToDB } from "@/lib/moongoose";
+import { NextRequest } from "next/server";
 
 export const authOptions: AuthOptions = {
   providers: [
@@ -48,11 +49,11 @@ export const authOptions: AuthOptions = {
 
 const handler = NextAuth(authOptions);
 
-// Wrap the NextAuth handler to match Next.js RouteHandler signature
-export async function GET(request: Request) {
+// Wrap handler so it accepts NextRequest and returns Response
+export async function GET(request: NextRequest) {
   return handler(request);
 }
 
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
   return handler(request);
 }
