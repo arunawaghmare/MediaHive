@@ -7,7 +7,6 @@ import "swiper/css/autoplay";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
-import Link from "next/link";
 import Information from "./information/Information";
 import Leadership from "./leadership/Leadeship";
 import Career from "./career/Career";

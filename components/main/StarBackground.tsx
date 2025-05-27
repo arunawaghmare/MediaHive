@@ -3,7 +3,7 @@
 import React, { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
-// @ts-expect-error
+// @ts-expect-error: No type declarations available for maath random module, ignoring import error
 import * as random from "maath/random/dist/maath-random.esm";
 import * as THREE from "three";
 
