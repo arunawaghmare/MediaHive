@@ -14,14 +14,16 @@ const Career = () => {
 
       {/* Description */}
       <p className="text-base sm:text-lg text-gray-400 mb-6 sm:mb-8 max-w-md sm:max-w-xl">
-        We're looking for people who are committed to constantly push for more.
+        We&rsquo;re looking for people who are committed to constantly push for
+        more.
       </p>
 
       {/* Button */}
-      <Link href="/about/team" className="cursor-pointer">
-        <button className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold shadow-md hover:shadow-lg transition-shadow text-sm sm:text-base">
-          Work with us
-        </button>
+      <Link
+        href="/about/team"
+        className="cursor-pointer bg-gradient-to-r from-blue-500 to-purple-500 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold shadow-md hover:shadow-lg transition-shadow text-sm sm:text-base inline-block text-center"
+      >
+        Work with us
       </Link>
     </div>
   );

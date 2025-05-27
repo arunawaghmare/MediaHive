@@ -60,16 +60,25 @@ const Team = () => {
         {/* Image Section */}
         <div className="lg:w-1/2 flex justify-center items-center">
           <div className="relative w-[18rem] sm:w-[20rem] h-[25rem]">
-            <img
-              src="/team1.jpg"
-              alt="team working"
-              className="w-full h-48 sm:h-56 object-cover rounded-xl shadow-xl absolute top-0 left-6"
-            />
-            <img
-              src="/team2.jpg"
-              alt="outdoor meeting"
-              className="w-full h-48 sm:h-56 object-cover rounded-xl shadow-xl absolute top-52 left-0"
-            />
+            {/* First Image */}
+            <div className="absolute top-0 left-6 w-[16rem] h-48 sm:h-56 rounded-xl overflow-hidden shadow-xl">
+              <Image
+                src="/team1.jpg"
+                alt="team working"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* Second Image */}
+            <div className="absolute top-52 left-0 w-[16rem] h-48 sm:h-56 rounded-xl overflow-hidden shadow-xl">
+              <Image
+                src="/team2.jpg"
+                alt="outdoor meeting"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -85,11 +94,14 @@ const Team = () => {
               key={idx}
               className="bg-white rounded-xl shadow-lg overflow-hidden text-center p-5 transition-transform hover:scale-105 duration-300"
             >
-              <img
-                src={leader.image}
-                alt={leader.name}
-                className="w-full h-64 object-cover rounded-lg mb-4"
-              />
+              <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden">
+                <Image
+                  src={leader.image}
+                  alt={leader.name}
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <h3 className="text-lg font-semibold text-gray-900">
                 {leader.name}
               </h3>
@@ -106,13 +118,15 @@ const Team = () => {
           Get in touch with us
         </h1>
         <p className="text-base sm:text-lg text-gray-400 mb-6 max-w-xl">
-          We're looking for people who are committed to constantly push for
+          We&apos;re looking for people who are committed to constantly push for
           more.
         </p>
-        <Link href="/" className="cursor-pointer">
-          <button className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg transition-shadow">
-            Get Started
-          </button>
+
+        <Link
+          href="/"
+          className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg transition-shadow inline-block"
+        >
+          Get Started
         </Link>
       </div>
     </div>

@@ -4,7 +4,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
 import Image from "next/image";
-import Link from "next/link";
 
 const Encryption = () => {
   return (

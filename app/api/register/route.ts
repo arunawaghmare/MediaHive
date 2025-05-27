@@ -19,6 +19,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ message: 'User registered successfully' }, { status: 201 })
   } catch (error) {
+    console.error('Error in POST /api/register:', error)
     return NextResponse.json({ message: 'Something went wrong' }, { status: 500 })
   }
 }

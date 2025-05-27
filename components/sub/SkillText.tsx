@@ -7,7 +7,6 @@ import {
   slideInFromTop,
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
-import Link from "next/link";
 
 const SkillText = () => {
   return (
