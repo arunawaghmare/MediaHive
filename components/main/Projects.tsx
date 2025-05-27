@@ -14,7 +14,7 @@ const Projects = () => {
 
       <div className="w-full flex flex-col md:flex-row gap-10 px-10 ">
         <ProjectCard
-          src="/g3.png"
+          src="/g14.png"
           title="Nostra Online Gaming"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
         />
